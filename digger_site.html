@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIGGER — Escape the Cave</title>
+<meta name="description" content="DIGGER is a hardcore platformer. Explore 18 story levels, discover 4 endings, fight bosses and survive the cave.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap');
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#070809;color:#eee;font-family:Inter,Arial,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:4px 4px;mix-blend-mode:soft-light}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;
+background:linear-gradient(180deg,rgba(2,3,4,.15),#070809 92%),radial-gradient(ellipse at 50% 35%,#4b5350 0,#171b1a 28%,#080909 62%,#030404 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:
+linear-gradient(120deg,transparent 0 43%,rgba(220,235,220,.09) 48%,transparent 54%),
+linear-gradient(240deg,transparent 0 48%,rgba(255,255,255,.05) 51%,transparent 56%)}
+.cave{position:absolute;inset:auto 0 0;height:38%;background:linear-gradient(165deg,transparent 18%,#050606 19% 39%,transparent 40%),linear-gradient(195deg,transparent 20%,#050606 21% 42%,transparent 43%);opacity:.95}
+.hero-content{position:relative;z-index:2;padding:30px}.eyebrow{letter-spacing:7px;text-transform:uppercase;font-size:12px;color:#b5b5ad;margin-bottom:18px}
+.logo{font-family:Anton,sans-serif;font-size:clamp(74px,15vw,180px);letter-spacing:8px;line-height:.9;margin:0;text-shadow:0 7px 0 #171817,0 0 35px rgba(230,230,210,.15)}
+.tag{font-size:clamp(15px,2vw,23px);letter-spacing:4px;text-transform:uppercase;color:#c9c9c2;margin:28px 0 34px}
+.btn{display:inline-block;padding:17px 31px;border:1px solid #a99b62;color:#f5f0df;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-weight:800;background:linear-gradient(#786f45,#4d472e);box-shadow:0 0 30px rgba(185,165,85,.18);transition:.2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 0 45px rgba(210,190,100,.35);filter:brightness(1.15)}
+.scroll{margin-top:70px;font-size:10px;letter-spacing:4px;color:#777;text-transform:uppercase}
+section{max-width:1120px;margin:auto;padding:105px 25px}.title{font-family:Anton,sans-serif;font-size:52px;letter-spacing:3px;margin:0 0 20px}.line{width:90px;height:3px;background:#9e8e54;margin:20px 0 35px}.lead{max-width:780px;color:#bdbdb7;line-height:1.9;font-size:17px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:65px}.stat{padding:30px 15px;text-align:center;background:#101211;border:1px solid #202321}.num{font-family:Anton;font-size:48px;color:#d1c38b}.label{font-size:11px;letter-spacing:2px;color:#858781}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:linear-gradient(145deg,#111413,#0b0c0c);border:1px solid #242725;padding:30px;min-height:160px}.card h3{font-family:Anton;font-size:25px;letter-spacing:1px;margin:0 0 12px}.card p{color:#969993;line-height:1.65;margin:0;font-size:14px}
+.cta{text-align:center;max-width:none;background:radial-gradient(circle at 50% 50%,#272820 0,#0a0b0b 58%);border-top:1px solid #1e211f;border-bottom:1px solid #1e211f}.cta .title{font-size:clamp(45px,8vw,95px)}footer{padding:30px;text-align:center;color:#565a56;font-size:11px;letter-spacing:2px}
+@media(max-width:750px){.stats{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}.title{font-size:42px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">A Hardcore Platformer</div>
+    <h1 class="logo">DIGGER</h1>
+    <div class="tag">Escape the cave. Survive the challenge.</div>
+    <a class="btn" href="https://vladyslav1998981.itch.io/digger" target="_blank" rel="noopener">⛏ Play Digger on itch.io</a>
+    <div class="scroll">↓ Explore the cave ↓</div>
+  </div>
+  <div class="cave"></div>
+</header>
+
+<section>
+  <h2 class="title">THE CAVE IS WAITING</h2><div class="line"></div>
+  <p class="lead">DIGGER is a hardcore platformer where every step can bring you closer to freedom — or another brutal defeat. Explore a mysterious cave, collect coins and health packs, upgrade your character, discover secrets and fight your way out.</p>
+  <div class="stats">
+    <div class="stat"><div class="num">18</div><div class="label">STORY LEVELS</div></div>
+    <div class="stat"><div class="num">4</div><div class="label">ENDINGS</div></div>
+    <div class="stat"><div class="num">10</div><div class="label">EXTRA LEVELS</div></div>
+    <div class="stat"><div class="num">∞</div><div class="label">ENDLESS MODE</div></div>
+  </div>
+</section>
+
+<section>
+  <h2 class="title">SURVIVE. UPGRADE. ESCAPE.</h2><div class="line"></div>
+  <div class="features">
+    <article class="card"><h3>18 STORY LEVELS</h3><p>Explore a dangerous cave filled with challenges, secrets, humor and unexpected situations.</p></article>
+    <article class="card"><h3>4 ENDINGS</h3><p>Discover three main endings — and search for the secret fourth ending.</p></article>
+    <article class="card"><h3>HARDCORE</h3><p>Multiple difficulty options let you choose your challenge. The cave will test your patience and reflexes.</p></article>
+    <article class="card"><h3>UPGRADE</h3><p>Collect coins, find health packs and improve your character as you progress.</p></article>
+    <article class="card"><h3>BOSS BATTLES</h3><p>Face dangerous bosses in additional challenges and prove you can survive.</p></article>
+    <article class="card"><h3>ENDLESS MODE</h3><p>Think you've mastered Digger? Keep going and see how far your skills can take you.</p></article>
+  </div>
+</section>
+
+<section class="cta">
+  <h2 class="title">ARE YOU READY TO ESCAPE?</h2>
+  <p class="lead" style="margin:0 auto 35px">Collect. Upgrade. Fight. Survive. Find your way out.</p>
+  <a class="btn" href="https://vladyslav1998981.itch.io/digger" target="_blank" rel="noopener">PLAY DIGGER ON ITCH.IO</a>
+</section>
+<footer>© DIGGER • VLADYSLAV1998981 • MADE FOR THE CAVE</footer>
+</body>
+</html>
